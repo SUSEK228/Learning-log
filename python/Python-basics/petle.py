@@ -1,3 +1,5 @@
+#Ćwiczenia od podstaw do pętli
+
 # komentarz
 '''
 komentarz blokowy

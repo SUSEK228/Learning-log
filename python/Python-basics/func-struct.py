@@ -1,4 +1,4 @@
-
+# Ćwiczenia z funkcji i struktur
 def hello():
     print("witaj")
 def dodaj(a,b):
