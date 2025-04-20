@@ -1,11 +1,11 @@
 #Ćwiczenie programowania obiektowego w pythonie
 
 #from klasy import Car
-from klasy import Animal,Cat,Ryba,Dog
+from klasy import Animal,Cat,Ryba,Dog,Telefon
 #from klasy import Vehicle
 #from klasy import Motorbike
 
-from klasy import Figura,Kolo,Kwadrat,Trojkat,Paczka
+from klasy import Figura,Kolo,Kwadrat,Trojkat,Paczka,Engine,Wheel,Carobj,Firma
 '''
 car1 = Car("A6", 2020, "black", False)
 car2 = Car("Mustang", 1995, "red", True)    # przypisywanie
@@ -43,7 +43,30 @@ for i in figury:
     '''
     
 #Duck typing
-
-zwierzeta=[Dog("Max"),Cat("Kitek")]
+'''
+zwierzeta=[Dog("Max"),Cat("Kitek"),Telefon("Iphone")]
 for i in zwierzeta:
-    print(f"{i.sound()}")
+    i.sound()
+    print(i.alive)
+'''
+#composition
+'''
+car =Carobj(model="A6",horsepower=210,wheelsize=15)
+car2=Carobj(model="e36",horsepower=190,wheelsize=14)
+print(car.info())
+'''
+
+#nested classes
+firma1 = Firma("BINBASH")
+firma1.dodaj_pracownika(imie="Pablo",stanowisko="Spawacz")
+firma1.dodaj_pracownika(imie="Wiktor",stanowisko="Manager")
+firma1.dodaj_pracownika(imie="Marek",stanowisko="Kasjer")
+
+firma2 = Firma("CMD")
+firma2.dodaj_pracownika(imie="Asia",stanowisko="Manager")
+firma2.dodaj_pracownika(imie="Kasia",stanowisko="Sekretarka")
+firma2.dodaj_pracownika(imie="Malgosia",stanowisko="Robotnik")
+for i in firma1.lista_pracownikow():
+    print(i)
+for i in firma2.lista_pracownikow():
+    print(i)

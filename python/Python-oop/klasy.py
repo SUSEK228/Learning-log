@@ -24,6 +24,7 @@ class Car:
         print(f"Samochod to: {self.model}\nrok: {self.year}\nkolor: {self.color}\nDostepny: {self.for_sale}")
 
 class Animal:
+    alive=True
     def __init__(self,name):
         self.name = name
     def eat(self):
@@ -36,9 +37,11 @@ class Dog(Animal):
     def sound(self):
         print("Hau")
 
+
 class Cat(Animal):
     def sound(self):
-        print("Miau")    
+        print("Miau")  
+      
 
 
 class  Predator(Animal):
@@ -52,6 +55,12 @@ class Prey(Animal):
 class Ryba(Prey, Predator):
     pass
 
+class Telefon:
+    alive=False
+    def __init__(self,name):
+        self.name = name
+    def sound(self):
+        print("Ring ring")
 
 # klasa abstrakcyjna
 class Vehicle(ABC):
@@ -121,3 +130,65 @@ class Paczka(Kwadrat):
         self.material=material
 
         
+class Engine:
+    def __init__(self,horsepower):
+        self.horsepower=horsepower
+
+class Wheel:
+    def __init__(self,size):
+        self.size=size
+        
+class Carobj:
+    def __init__(self,model,horsepower,wheelsize):
+        self.model=model
+        self.engine=Engine(horsepower)
+        self.wheels= [Wheel(wheelsize) for wheel in range(4)]
+    
+    def info(self):
+        return f"{self.model} {self.engine.horsepower}(KM) {self.wheels[0].size}"
+
+class Firma:
+    class Pracownik:
+        def __init__(self,imie,stanowisko):
+            self.imie=imie
+            self.stanowisko=stanowisko
+        
+        def get_details(self):
+            return f"{self.imie} {self.stanowisko}"
+    
+    def __init__(self,nazwa_firmy):
+        self.nazwa_firmy=nazwa_firmy
+        self.pracownicy = []
+        
+    def dodaj_pracownika(self, imie, stanowisko):
+         nowy_pracownik = self.Pracownik(imie,stanowisko)
+         self.pracownicy.append(nowy_pracownik)
+
+    def lista_pracownikow(self):
+        return [i.get_details() for i in self.pracownicy]
+#statyczne metody naleza do klasy ogolnie nie uzywaja danych z klasy, sa niezalezne
+
+'''
+Magic methods:
+-    __str__        zwracamy stringi z danych elementow klasy
+-    __eq__         porownuje obiekty
+-    __lt__         znak <  w stosunku do obiektow
+-    __gt__         znak > w stosunku do obiektow
+-    __add__        mozna dododawac dane z obiektow
+-    __contains__   sprawdzanie czy obiekt zawiera dany element (True/False)
+-    __getitem__    zwracanie wybranego klucza
+-    __del__        destruktor obiektu
+
+Property Decorators:
+@property - pozwala traktowac metode jako atrybut (m nie trzeba uzywac nawiasow)
+@cos.setter - pozwala na modyfikacje pola
+@deleter - taki destruktor w c++ tylko ze usuwasz jakies kopnkretne dane a nie caly obiekt
+
+
+Poziomy Dostępu:
+np.
+self.test       - public
+self._test      - protected
+self.__test     - private
+
+'''
