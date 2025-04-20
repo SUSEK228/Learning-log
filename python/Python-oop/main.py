@@ -1,13 +1,11 @@
 #Ćwiczenie programowania obiektowego w pythonie
 
 #from klasy import Car
-#from klasy import Dog
-#from klasy import Cat
-#from klasy import Ryba
+from klasy import Animal,Cat,Ryba,Dog
 #from klasy import Vehicle
 #from klasy import Motorbike
 
-from klasy import Figura,Kolo,Kwadrat,Trojkat
+from klasy import Figura,Kolo,Kwadrat,Trojkat,Paczka
 '''
 car1 = Car("A6", 2020, "black", False)
 car2 = Car("Mustang", 1995, "red", True)    # przypisywanie
@@ -37,6 +35,15 @@ rybka.eat()
 #vehicle = Motorbike()
 #vehicle.stop()
 
-figury = [Kolo(3),Kwadrat(4),Trojkat(2,3)]
+#polimorfizm
+'''
+figury = [Kolo(3),Kwadrat(4),Trojkat(2,3),Paczka(2,"karton")]
 for i in figury:
     print(f"{i.pole()} cm^2")
+    '''
+    
+#Duck typing
+
+zwierzeta=[Dog("Max"),Cat("Kitek")]
+for i in zwierzeta:
+    print(f"{i.sound()}")

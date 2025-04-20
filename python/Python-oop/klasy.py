@@ -30,7 +30,7 @@ class Animal:
         print(f"{self.name} is eating")
         
     def sleep(self):
-        print(f"{self.name} is sleeping")
+       print(f"{self.name} is sleeping")
         
 class Dog(Animal):
     def sound(self):
@@ -96,7 +96,7 @@ class Figura:
     
 class Kolo(Figura):
     def __init__(self,promien):
-        self.bok=promien
+        self.promien=promien
     
     def pole(self):
         return 3.14*self.promien**2
@@ -115,5 +115,9 @@ class Trojkat(Figura):
     def pole(self):
         return self.podstawa*self.wysokosc/2
         
+class Paczka(Kwadrat):
+    def __init__(self, bok, material):
+        super().__init__(bok)
+        self.material=material
 
         
