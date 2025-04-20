@@ -4,8 +4,10 @@
 #from klasy import Dog
 #from klasy import Cat
 #from klasy import Ryba
-from klasy import Vehicle
-from klasy import Motorbike
+#from klasy import Vehicle
+#from klasy import Motorbike
+
+from klasy import Figura,Kolo,Kwadrat,Trojkat
 '''
 car1 = Car("A6", 2020, "black", False)
 car2 = Car("Mustang", 1995, "red", True)    # przypisywanie
@@ -32,5 +34,9 @@ rybka = Ryba("Okon")
 rybka.hunt()
 rybka.eat()
 '''
-vehicle = Motorbike()
-vehicle.stop()
+#vehicle = Motorbike()
+#vehicle.stop()
+
+figury = [Kolo(3),Kwadrat(4),Trojkat(2,3)]
+for i in figury:
+    print(f"{i.pole()} cm^2")

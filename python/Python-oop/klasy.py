@@ -86,3 +86,34 @@ class Student:
     def __init__(self,imie,nazwisko,uczelnia):
         super().__init__(imie,nazwisko)
         self.uczelnia=uczelnia
+        
+        
+class Figura:
+    @abstractmethod
+    def pole(self):
+        pass
+    
+    
+class Kolo(Figura):
+    def __init__(self,promien):
+        self.bok=promien
+    
+    def pole(self):
+        return 3.14*self.promien**2
+
+
+class Kwadrat(Figura):
+    def __init__(self,bok):
+        self.bok=bok
+    def pole(self):
+        return self.bok ** 2
+        
+class Trojkat(Figura):
+    def __init__(self,podstawa,wysokosc):
+        self.podstawa=podstawa
+        self.wysokosc=wysokosc
+    def pole(self):
+        return self.podstawa*self.wysokosc/2
+        
+
+        
