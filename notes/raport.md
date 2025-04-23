@@ -10,3 +10,5 @@ Zrozumienie programowania obiektowego w Pythonie
 Utrwalenie wiedzy z oop python
 - Zrobienie mini-projektu Biblioteka, która obsługuje dodawanie, odejmowanie i wypożyczanie książek
 - Zaczęcie projektu Checklista z GUI
+# 23.04.2025
+Instalacja Django
