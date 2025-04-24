@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moja Checklista</title>
+</head>
+<body>
+    <h1>Moja lista zadań</h1>
+    <ul>
+        {% for zad in zadania%}
+        <li>
+            {% if zad.zrobione %}
+                ✅ <s>{{ zad.tresc }}</s>
+            {% else %}
+                ⬜ {{ zad.tresc }}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

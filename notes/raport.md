@@ -12,3 +12,10 @@ Utrwalenie wiedzy z oop python
 - Zaczęcie projektu Checklista z GUI
 # 23.04.2025
 Instalacja Django
+# 24.04.2025
+- tworzenie mini projektu checklistew django
+- zrobienie aplikacji wewnatrznej 'zadania' oraz dodanie jej w settings.py
+- stworzono model zadanie z trescia zadania i czy wykonane oraz dokonano migracji (utworzono baze danych sqlite)
+- stworzenie superuzytkownika do testowania i nadzorowania działań ( dodano dane testowe)
+- stworzony widok w html lista.html
+- stworzone urls.py w aplikacji i połączono go do głownego urls.py projektu 
