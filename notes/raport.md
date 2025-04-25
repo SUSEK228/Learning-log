@@ -19,3 +19,5 @@ Instalacja Django
 - stworzenie superuzytkownika do testowania i nadzorowania działań ( dodano dane testowe)
 - stworzony widok w html lista.html
 - stworzone urls.py w aplikacji i połączono go do głownego urls.py projektu 
+# 25.04.2025
+- dodanie możliwości dodawania zadań na stronie przez użytkownika.

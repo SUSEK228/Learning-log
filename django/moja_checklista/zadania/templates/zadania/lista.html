@@ -5,6 +5,12 @@
 </head>
 <body>
     <h1>Moja lista zadań</h1>
+    <h2>Dodaj nowe zdanie</h2>
+    <form method="POST">
+         {% csrf_token %}
+         <input type="text" name="tresc" placeholder="Wpisz zadanie..." required>
+         <button type="submit">Dodaj</button>
+    </form>
     <ul>
         {% for zad in zadania%}
         <li>
