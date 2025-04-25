@@ -4,6 +4,8 @@ Ten projekt to dziennik rozwoju w zakresie developera python
 # technologie / narzędzia
 - Python
 - Django 
+- HTML
+- CSS
 - Git 
 - Linux 
 
