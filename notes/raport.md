@@ -21,3 +21,5 @@ Instalacja Django
 - stworzone urls.py w aplikacji i połączono go do głownego urls.py projektu 
 # 25.04.2025
 - dodanie możliwości dodawania zadań na stronie przez użytkownika.
+# 26.04.2025 
+- testowanie i utrwalanie tworzenia oraz konfiguracji projektu django oraz kluczowych plików
