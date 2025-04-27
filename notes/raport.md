@@ -13,7 +13,7 @@ Utrwalenie wiedzy z oop python
 # 23.04.2025
 Instalacja Django
 # 24.04.2025
-- tworzenie mini projektu checklistew django
+- tworzenie mini projektu checklista django
 - zrobienie aplikacji wewnatrznej 'zadania' oraz dodanie jej w settings.py
 - stworzono model zadanie z trescia zadania i czy wykonane oraz dokonano migracji (utworzono baze danych sqlite)
 - stworzenie superuzytkownika do testowania i nadzorowania działań ( dodano dane testowe)
@@ -23,3 +23,6 @@ Instalacja Django
 - dodanie możliwości dodawania zadań na stronie przez użytkownika.
 # 26.04.2025 
 - testowanie i utrwalanie tworzenia oraz konfiguracji projektu django oraz kluczowych plików
+# 27.04.2025
+- stworzenie projektu django a w nim aplikacje testową do nauki, w której będę testował nowe rzeczy,
+na przykład: django template language, przypomninie i utrwalenie css,html oraz odpowiednie korzystanie i konfigoruwanie plików projektowych
