@@ -26,3 +26,5 @@ Instalacja Django
 # 27.04.2025
 - stworzenie projektu django a w nim aplikacje testową do nauki, w której będę testował nowe rzeczy,
 na przykład: django template language, przypomninie i utrwalenie css,html oraz odpowiednie korzystanie i konfigoruwanie plików projektowych
+# 30.04.2025
+- ulepepszenie checklisty o funkcje zmien status i przypominanie i utrwalanie html 

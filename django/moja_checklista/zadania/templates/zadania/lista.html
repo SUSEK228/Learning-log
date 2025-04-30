@@ -19,6 +19,7 @@
             {% else %}
                 ⬜ {{ zad.tresc }}
             {% endif %}
+            <a href="{% url 'zmien_status' zad.id %}">[Zmień]</a>
         </li>
         {% endfor %}
     </ul>

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Zadanie
 # Create your views here.
 
@@ -13,3 +13,9 @@ def lista_zadan (request):
     
     zadania = Zadanie.objects.all()
     return render(request, 'zadania/lista.html', {'zadania': zadania})
+
+def zmien_status(request, zadanie_id):
+    zadanie = get_object_or_404(Zadanie, id=zadanie_id)
+    zadanie.zrobione = not zadanie.zrobione  # zamieniamy True ↔ False
+    zadanie.save()
+    return redirect('lista')
