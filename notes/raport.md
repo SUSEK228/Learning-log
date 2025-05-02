@@ -28,3 +28,5 @@ Instalacja Django
 na przykład: django template language, przypomninie i utrwalenie css,html oraz odpowiednie korzystanie i konfigoruwanie plików projektowych
 # 30.04.2025
 - ulepepszenie checklisty o funkcje zmien status i przypominanie i utrwalanie html 
+# 02.05.2025
+dodano mini projekcick wisielec w pythonie
