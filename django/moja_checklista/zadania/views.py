@@ -16,6 +16,6 @@ def lista_zadan (request):
 
 def zmien_status(request, zadanie_id):
     zadanie = get_object_or_404(Zadanie, id=zadanie_id)
-    zadanie.zrobione = not zadanie.zrobione  # zamieniamy True ↔ False
+    zadanie.zrobione = not zadanie.zrobione  # zamieniamy True | False
     zadanie.save()
     return redirect('lista')
