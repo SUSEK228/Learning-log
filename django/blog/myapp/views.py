@@ -9,3 +9,7 @@ def index(request):
         'nationality' : 'Polish',
     }
     return render(request, 'index.html', context)
+def counter(request):
+    text=request.POST['text']
+    amount_of_words=len(text.split())
+    return render(request, 'counter.html', {'amount' : amount_of_words})
