@@ -1,8 +1,11 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'style.css' %}">
-
-<h1>Insert your text below</h1>
+{%if user.is_authenticated%}
+<h1>Welcome {{user.username}}!</h1>
+{%else%}
+<h1>Insert your text belowawaw</h1>
+{% endif %}
 <form method="POST" action="counter">
     {% csrf_token %}
     <textarea name="text" rows="25" cols="50"></textarea>
